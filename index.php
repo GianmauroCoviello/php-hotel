@@ -41,6 +41,7 @@
 
     ];
 
+    var_dump($hotels)
 ?>
 
 
@@ -55,6 +56,23 @@
     <title>Document</title>
 </head>
 <body>
+    <div>
+    <ul>
+        <!-- cicliamo l'array associativo con il ciclo foreach -->
+        <?php foreach($hotels as $hotel ) {?>
+            <!-- inseriamo i list item che verra ciclato  -->
+
+            <li>
+                <?php echo $hotel ?>
+                
+
+            </li>
+
+
+
+        <?php } ?>
+    </ul>
+    </div>
     
     
 </body>
