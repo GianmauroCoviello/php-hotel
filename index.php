@@ -35,23 +35,8 @@
                                 <!-- inseriti le chiavi con i propri valori all'interno dei td -->
                                 <td><?php echo $hotel['name'] ?></td>
                                 <td><?php echo $hotel['description'] ?></td>
-                                <td>
-                                    <?php 
-                                        echo $hotel['parking'] ;
-                                        
-                                        if ($hotel['parking'] === true) {
-                                            
-                                            echo 'SI';
-                                       
-                                            
-                                        } else {
-                                            echo 'NO';
-                                            
-                                        }
-                                
-
-                                    ?>
-                                </td>
+                                <!-- inseriamo una condizione per il parcheggio: se ha valore true stampa si altrimenti no se ha valore e false -->
+                                <td><?php echo $hotel['parking'] ? 'SI' : 'NO';?></td>
                                 <td><?php echo $hotel['vote'] ?></td>
                                 <td><?php echo $hotel['distance_to_center']; ?>m</td>                        
                             </tr>
